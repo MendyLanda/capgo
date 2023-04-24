@@ -125,8 +125,8 @@ dependencies:
     specifier: 1.0.0-beta.6
     version: 1.0.0-beta.6
   '@formkit/themes':
-    specifier: 0.17.0-14a54c8
-    version: 0.17.0-14a54c8(tailwindcss@3.3.1)
+    specifier: 0.17.0-f6bd352
+    version: 0.17.0-f6bd352(tailwindcss@3.3.1)
   '@formkit/vue':
     specifier: 0.17.0-14a54c8
     version: 0.17.0-14a54c8(tailwindcss@3.3.1)(vue@3.2.47)
@@ -2925,6 +2925,12 @@ packages:
       '@formkit/utils': 0.17.0-14a54c8
     dev: false
 
+  /@formkit/core@0.17.0-f6bd352:
+    resolution: {integrity: sha512-yLwQJ86EcEylSxJd0Z+xE+v4e3BkT63qwyIDR44j6sSwFrhaTifaQahOS6gOTbGabuQ+OLASnHX+dBSlAv1/eg==}
+    dependencies:
+      '@formkit/utils': 0.17.0-f6bd352
+    dev: false
+
   /@formkit/dev@0.17.0-14a54c8:
     resolution: {integrity: sha512-xDum9gC95xCDN69wBHklX2OnW4DEL/GwatyifJC8dBbLxxUzAGXf14HaY+vNh7Ly0JEPUP/0DFMZ+DVZA2C6Zg==}
     dependencies:
@@ -2980,8 +2986,30 @@ packages:
       tailwindcss: 3.3.1(postcss@8.4.23)
     dev: false
 
+  /@formkit/themes@0.17.0-f6bd352(tailwindcss@3.3.1):
+    resolution: {integrity: sha512-ZZOCTt4i+7VqjtsfowKlyvyHMJvxdx+B5vHHG7k8SUvF7T3/4QCcGULNYMLBRoWZPKxz2KEI6m0pufAnkLFdFw==}
+    peerDependencies:
+      tailwindcss: ^3.2.0
+      unocss: ^0.31.0
+      windicss: ^3.0.0
+    peerDependenciesMeta:
+      tailwindcss:
+        optional: true
+      unocss:
+        optional: true
+      windicss:
+        optional: true
+    dependencies:
+      '@formkit/core': 0.17.0-f6bd352
+      tailwindcss: 3.3.1(postcss@8.4.23)
+    dev: false
+
   /@formkit/utils@0.17.0-14a54c8:
     resolution: {integrity: sha512-dyMJxIbzaBjG+w8NorBZTsg7+8ymSsfN2iBSFSQwdtdQftNWYWMk0d2FmqGNa8AipL/gAyTy4NHNMkgyOB/F/w==}
+    dev: false
+
+  /@formkit/utils@0.17.0-f6bd352:
+    resolution: {integrity: sha512-uPn0zgLTHVKWrk0GQTGGRFs8dyPMRjPMsna+LqzMPpcY79peBNob6wxd3RJB2Gt+cnDvNNG45InukZCcYJV2Jw==}
     dev: false
 
   /@formkit/validation@0.17.0-14a54c8:
